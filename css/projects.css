@@ -1,0 +1,67 @@
+body{
+    background-color: rgba(62, 60, 61);
+}
+.container{
+    width: 100%;
+    margin: 0 30px;
+}
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.project{
+    width: 400px;
+    height: 300px;
+    margin-bottom: 20px;
+    position: relative;
+    border: 1px solid rgb(240,225,154);
+    cursor: pointer;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.project a{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.project_name{
+    background-color: rgba(0,0,0,0.2);
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.prj1{
+    background-image: url(../img/restaurant.jpg);
+}
+.project::before{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    background: rgba(255,255,255,0.4);
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: 0.3s;
+}
+.project:hover::before{
+    width: 100%;
+}
+@media screen and (max-width: 1100px){
+    .container{
+        margin: 0;
+    }
+
+}
+@media screen and (max-width: 400px){
+    .project{
+        width: 100vw;
+        height: 200px;
+    }
+}

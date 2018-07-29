@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Frank Ruhl Libre', serif;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: rgb(240,225,154);
+}
+.main_container{
+  display: flex;
+  flex-direction: row-reverse;
+}
+.page_main_title{
+  font-family: 'Poiret One', cursive;
+}
+/* MAIN TITLE FOR PAGES -- NOT HOME */
+.generic_main_title{
+  margin:50px 10px;
+}
+/* MAIN TITLE FOR PAGES -- NOT HOME */
+.change_color{
+  color: rgb(240,225,154);
+  font-family: inherit;
+}
+/* MENU */
+.menu{
+  width: 15vw;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 30px;
+}
+.menu ul{
+  width: 100%;
+  border-left: 1px solid rgb(240,225,154);
+  padding-left: 10px;
+  padding-bottom: 40px;
+}
+.menu li{
+  font-size: 1.5rem;
+  margin-top: 30px;
+  text-align: center;
+  border-bottom: 1px solid rgb(240,225,154);
+  width: max-content;
+}
+
+.menu a{
+  color: white;
+}
+.menu a:hover{
+  color: rgb(241, 215, 80);
+}
+/* MENU */
+/* RESPONSIVE */
+@media screen and (max-width: 1100px){
+  /* UPPER MENU */
+  .main_container{
+    flex-direction: column;
+  }
+  .menu{
+    height: 20vh;
+    width: 100%;
+    margin: 0;
+    /* justify-content: center; */
+  }
+  .menu ul{
+    display: flex;
+    justify-content: space-evenly;
+    border: none;
+  }
+  /* UPPER MENU */
+}
+@media screen and (max-width: 510px){
+  /* BOTTONED MENU */
+  .main_container{
+    flex-direction: column-reverse;
+  }
+  .menu{
+    height: auto;
+  }
+  .menu ul{
+    flex-direction: column;
+    align-items: center;
+  }
+  /* BOTTONED MENU */
+}
+@media screen and (max-height: 550px){
+    .menu{
+    height: auto;
+  }
+}

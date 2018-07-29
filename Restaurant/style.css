@@ -1,0 +1,380 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: rgb(240,57,53);
+}
+.container{
+    display: grid;
+    grid-template: repeat(7, auto);
+    grid-template-areas: "intro"
+                         "info"
+                         "quote"
+                         "menu_food"
+                         "contact_info"
+                         "foot";
+    position: relative;                
+}
+.head{
+    height: 100vh;
+    max-width: 100vw;
+    min-height: 500px;
+    grid-area: intro;
+    background: url(img/intro2.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    
+}
+.title{
+    height: 90%;
+    width: 100%;
+    display: table;
+    color: white;
+    text-align: center;
+}
+.title h1{
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 100px;
+    font-family: 'Merienda', cursive;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.change_color{
+    color: rgb(214,108,43);
+    font-family: inherit;
+}
+.burger_menu{
+    display: none;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.548);
+    width: 50px;
+    height: 50px;
+    padding-top: 10px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 2;
+    transition: background 0.3s;
+}
+.burger_menu:hover{
+    background-color: white;
+}
+.first, .second, .third{
+    height:5px;
+    width: 35px;
+    background-color: rgb(214,108,43);
+    margin: 3px auto;
+    border: 1px solid rgba(0, 0, 0, 0.281);
+}
+.side_menu{
+    display: flex;
+    position: fixed;
+    right: 0;
+    width: 0;
+    height: 100vh;
+    background-color: rgb(37,37,37);
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+.side_menu ul{
+    width: 50%;
+}
+.side_menu li{
+    border-bottom: 1px solid white;
+    text-align: center;
+    margin-top: 30px;
+    line-height: 30px;
+}
+.side_menu li:hover{
+    font-size: 150%;
+}
+.menu{
+    height: 10vh;
+}
+.menu ul{
+    display: flex;
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+.menu li{
+    font-size: 20px;
+    height: 100%;
+    width: 15%;
+    text-align: center;
+    line-height: 10vh;
+    vertical-align: middle;
+}
+.back_portfolio{
+    background-color: rgb(25,25,25);
+}
+.menu a{
+    color: orange;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.menu li:hover{
+    background-color: rgba(255, 255, 255, 0.493);
+}
+.information{ 
+    height: 70vh;
+    min-height: 400px;
+    grid-area: info;
+    font-size: 3vh;
+    text-align: justify;
+    max-width: 100vw;
+    padding: 70px;
+    background-color: rgb(25,25,25);
+    color: white;
+    line-height: 150%;
+}
+.information p{
+    border: 1px solid rgb(214,108,43);
+    height: 100%;
+    padding: 60px;
+}
+.block{
+    background-image: url(img/food.jpg);
+    height: 80vh;
+    min-height: 400px;
+    background-size: cover;
+    max-width: 100vw;
+    background-attachment: fixed;
+}
+.menu_food{
+    min-height: 400px;
+    display: grid;
+    grid-template: repeat(2,auto)/repeat(3,auto);
+    grid-template-areas: "foods drinks dessert"
+                         "contor contor contor";
+    grid-gap: 5vw;
+    padding: 40px;
+    align-content: center;
+    /* background-image: url(img/horizontal.jpg);*/
+    background-color: rgb(25,25,25);
+}
+
+.menu_common{
+    text-align: center;
+    background-color: rgba(206, 210, 219, 0.144);
+    border-radius: 10px;
+    color: white;
+    padding: 10px 0;
+}
+.menu_common li{
+    margin: 15px 30px;
+    padding: 10px;
+    border-bottom: 1px solid rgb(214,108,43);
+    display: flex;
+    justify-content: space-between;
+}
+.foods{
+    grid-area: foods;
+}
+.drinks{
+    grid-area: drinks;
+}
+.dessert{
+    grid-area: dessert;
+}
+.side_food{
+    grid-area: contor;
+    grid-column: 2/3;
+}
+.contact{
+    height: 150vh;
+    min-height: 400px;
+    grid-area: contact_info;
+    display: flex;
+    justify-content: space-around;
+    /* background-color: rgb(25,25,25); */
+    color: white; 
+    background-image: url(img/horizontal.jpg)
+}
+.map{
+    width: 40%;
+    height: 100%;
+}
+.location{
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.location h2{
+    border-bottom: 1px solid gray;
+    margin: 10px 0;
+}
+.box{
+    border: 1px solid rgb(214,108,43);
+    padding: 20px;
+    background-color:  rgba(25, 25, 25, 0.329);
+}
+.foot{
+    background-color: rgb(37,37,37);
+    height: 50vh;
+    min-height: 300px;
+    grid-area: foot;
+    display: flex;
+    justify-content: space-between;
+}
+.left_footer{
+    font-family: 'Merienda', cursive;
+    width: 25vw;
+    text-align: center;
+    line-height: 50vh;
+    vertical-align: middle;
+}
+.foot h3{
+    margin: 0 auto;
+    display: inline-block;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: white;
+}
+.right_footer{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+}
+.social{
+    flex: 1 0 auto;
+    text-align: center;
+    align-self: center;
+    padding-top: 50px;
+}
+.right_footer p{
+    width: 100%; 
+    color: white;
+    text-align: center;
+}
+/* RESPONSIVE */
+@media screen and (max-width: 940px){
+    .menu{
+        display: none;
+    }
+    .burger_menu{
+        display: inline-block;
+    }
+    .information{
+        /* padding: 50px; */
+        height: auto;
+    }
+    .map{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 780px){
+    .menu_food{
+        grid-template: repeat(2, auto)/ repeat(2, auto);
+        grid-template-areas: "foods drinks"
+                             "desserts contor";
+    }
+    .contact{
+        flex-direction: column-reverse;
+    }
+    .map{
+        width: 100%;
+    }
+    .location{
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    .foot{
+        flex-direction: column;
+        height: 30vh; 
+        min-height: 15vh; 
+    }
+    .left_footer{
+        width: 100vw;
+        height: 5vh;
+        background-color: inherit;
+        text-align: center;
+        line-height: normal;
+    }
+    .right_footer{
+       width: 100vw;
+    }
+    .social{
+        padding: 0;
+        margin: 0 auto;
+    }
+
+}
+@media screen and (max-width: 545px){
+    .information{
+        padding: 5px;
+        min-height: unset;
+    }
+    .menu_food{
+        max-width: 100vw;
+        grid-template: repeat(4,auto)/1fr;
+        grid-template-areas: "foods"
+                             "drinks"
+                             "desserts"
+                             "contor";
+        grid-gap: 20px;
+    }
+    .side_food{
+        grid-column: unset;
+    }
+    .contact{
+        max-width: 100vw;
+    }
+    .title h1{
+        font-size: 15vw;
+    }
+    .foot{
+        max-width: 100vw;
+    }
+}
+@media screen and (max-width: 440px){
+    .foot{
+        flex-direction: column;
+        height: auto;
+    }
+    .left_footer{
+        width: 100%;
+    }
+    .right_footer{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 420px){
+    .information p{
+        padding: 20px;
+        font-size: 16px;
+        line-height: 150%;
+    }
+}
+@media screen and (max-width: 360px){
+    .menu_common li{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 275px){
+    body{
+     overflow-x: hidden;   
+    }
+}
+@media screen and (max-height: 600px){
+    .information{
+        font-size: 20px;
+    }
+}
+@media screen and (min-width: 941px){
+    .side_menu{
+        width: 0;
+    }
+}
+/* RESPONSIVE */
