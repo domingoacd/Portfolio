@@ -38,6 +38,9 @@ body{
 .prj1{
     background-image: url(../img/restaurant.jpg);
 }
+.prj2{
+    background-image: url(../img/ecommerce.jpg);
+}
 .project::before{
     position: absolute;
     content: "";

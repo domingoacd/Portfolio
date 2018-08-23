@@ -95,6 +95,9 @@ li{
 .main_menu_black .search{
     border: 1px solid #4f5d75;
 }
+.back_portfolio a{
+    color:  #ef8354;
+}
 .foot{
     display: flex;
     background-color: #2d3142;
