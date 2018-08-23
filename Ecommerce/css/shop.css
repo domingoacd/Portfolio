@@ -1,0 +1,77 @@
+.sub_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 50px;
+}
+.product{
+    width: 31%;
+    min-width: 350px;
+    margin: 10px 0;
+}
+.product_image{
+    height: 400px;
+}
+.product_info{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;  
+}
+.add_to_cart_button{
+    width: 100px;
+    font-size: 18px;
+    background-color: #ef8354;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    border: 1px solid black;
+}
+/* LIST OF PRODUCTS */
+.prd1{
+    background: url(../img/product1.jpeg);
+    background-size: cover;
+}
+.prd2{
+    background: url(../img/product2.jpg);
+    background-size: cover;
+    background-position-x: -150px;
+}
+.prd3{
+    background: url(../img/product3.jpg);
+    background-size: cover
+}
+.prd4{
+    background: url(../img/product4.jpg);
+    background-size: cover;
+}
+.prd5{
+    background: url(../img/product1.jpeg);
+    background-size: cover;
+}
+.prd6{
+    background: url(../img/product2.jpg);
+    background-size: cover;
+    background-position-x: -150px;
+}
+.prd7{
+    background: url(../img/product3.jpg);
+    background-size: cover;
+}
+.prd8{
+    background: url(../img/product4.jpg);
+    background-size: cover;
+}
+.prd9{
+    background: url(../img/product1.jpeg);
+    background-size: cover;
+}
+/* LIST OF PRODUCTS */
+
+@media screen and (max-width: 380px){
+    .sub_container{
+        padding: 0;
+    }
+    .product{
+        min-width: 100%;
+    }
+}
