@@ -1,37 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/index.css">
-  <link href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre|Poiret+One" rel="stylesheet">
-  <title>Portfolio | Domingo Cabeza</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Gudea|Sawarabi+Mincho" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio | Domingo Cabeza</title>
 </head>
 <body>
-  <div class="overlap"></div>
-  <div class="main_container">
-    <nav class="menu">
-      <ul>
-        <li>
-          <a href="index.html">Home</a>
-        </li>
-        <li>
-          <a href="about.html">Acerca de mí</a>
-        </li>
-        <!-- <li>
-          <a href="social.html">Tecnologías</a>
-        </li> -->
-        <li>
-          <a href="projects.html">Proyectos</a>
-        </li>
-      </ul>
-    </nav>
-      <div class="container">
-        <h1 class="page_main_title title"><span class="change_color">Domingo</span> Cabeza</h1>
-        <h2 class="sub_title">Desarrollador Web. Programador. Emprendedor.</h2>
-      </div>
+    <div class="nav-side" id="nav-side">
+        <header class="head">
+            <h1>Domingo Cabeza</h1>
+            <p>Web Developer</p>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#about" class="nav-anchor">About</a></li>
+                <li><a href="#skills" class="nav-anchor">Skills</a></li>
+                <li><a href="#projects" class="nav-anchor">Projects</a></li>
+                <li><a href="#websites" class="nav-anchor">Websites</a></li>
+                <!-- <li><a href="#contact" class="nav-anchor">Contact</a></li> -->
+            </ul>
+        </nav>
     </div>
+    <div class="container">
+        <section class="about" id="about">
+            <h2>Hello!</h2>
+            <div class="sub-body">
+                <p>My name is Domingo and I am a web developer eager for participe in exciting projects
+                    that will allow me to learn about new things.</p>
+                <div class="social-networks">
+                    <a href="https://domingoacd.github.io/portfolio"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/domingoacd/"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </section>
+        <section class="skills" id="skills">
+            <h2>Skills</h2>
+            <ul class="sub-body skills-list">
+                <li>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>Javascript</li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li>Git</li>
+                        <li>Sass</li>
+                        <li>SEO</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <section class="projects" id="projects">
+                <h2>Projects</h2>
+                <div class="sub-body">
+                    <figure class="thumbnail">
+                        <figcaption>FizzBuzz Game</figcaption>
+                        <a href="https://domingoacd.github.io/FizzBuzzGame/"><img src="img/fizz_thumb.png" alt=""></a>
+                        <a href="https://github.com/domingoacd/FizzBuzzGame">Watch code on Github<i class="fab fa-github"></i></a>
+                    </figure>
+                    <figure class="thumbnail">
+                        <figcaption>Pomodoro Timer</figcaption>
+                        <a href="https://domingoacd.github.io/PomoTemp/"><img src="img/pom_thumb.png" alt=""></a>
+                        <a href="https://github.com/domingoacd/PomoTemp">Watch code on Github<i class="fab fa-github"></i></a>
+                    </figure>
+                </div>
+        </section>
+        <section class="websites" id="websites">
+                <h2>Websites</h2>
+                <div class="sub-body">
+                    <figure class="thumbnail">
+                        <figcaption>Restaurant</figcaption>
+                        <a href="LeRestaurant/index.html"><img src="img/rest_thumb.png" alt=""></a>
+                        <a href="https://github.com/domingoacd/portfolio/tree/master/LeRestaurant">Watch code on Github<i class="fab fa-github"></i></a>
+                    </figure>
+                    <figure class="thumbnail">
+                        <figcaption>Charger</figcaption>
+                        <a href="https://domingoacd.github.io/ChargerWeb/"><img src="img/charger_thumb.png" alt=""></a>
+                        <a href="https://github.com/domingoacd/ChargerWeb">Watch code on Github<i class="fab fa-github"></i></a>
+                    </figure>
+                </div>
+        </section>
+    </div>
+    <script src="javascript.js"></script>
 </body>
 </html>
