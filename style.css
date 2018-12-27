@@ -100,7 +100,7 @@ h1,h2{
 }
 .projects .sub-body, .websites .sub-body{
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 .thumbnail{
