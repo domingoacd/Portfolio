@@ -1,98 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
-        crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Gudea|Sawarabi+Mincho" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title>Portfolio | Domingo Cabeza</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Domingo Cabeza | Portfolio</title>
 </head>
 <body>
-    <div class="nav-side" id="nav-side">
-        <header class="head">
-            <h1>Domingo Cabeza</h1>
-            <p>Web Developer</p>
-        </header>
-        <nav>
-            <ul>
-                <li><a href="#about" class="nav-anchor">About</a></li>
-                <li><a href="#skills" class="nav-anchor">Skills</a></li>
-                <li><a href="#projects" class="nav-anchor">Projects</a></li>
-                <li><a href="#websites" class="nav-anchor">Websites</a></li>
-                <!-- <li><a href="#contact" class="nav-anchor">Contact</a></li> -->
-            </ul>
-        </nav>
+  <nav class="main-menu">
+    <ul class="main-menu__menu" id="main-menu">
+      <li class="j-anchor" data-link="about">
+        <a  href="#about">About</a>
+      </li>
+      <li class="j-anchor" data-link="projects">
+        <a href="#projects">Projects</a>
+      </li>
+      <li class="j-anchor" data-link="contact">
+        <a href="#contact">Contact</a>
+      </li>
+    </ul>
+
+    <ul class="main-menu__icons">
+      <li>
+        <a href="https://www.linkedin.com/in/domingoacd/">
+          <img src="./assets/linkedin.png" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/domingoacd">
+          <img src="./assets/github.png" alt="">
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <div class="container">
+    <div class="modal modal--form j-modal">
+      <div class="modal__content success">
+        Thanks for your message! I will contact you back soon.
+      </div>
+      <div class="modal__content error">
+        Oops! Your message could not be sent.
+      </div>
     </div>
-    <div class="container">
-        <section class="about" id="about">
-            <h2>Hello!</h2>
-            <div class="sub-body">
-                <p>My name is Domingo and I am a web developer eager for participe in exciting projects
-                    that will allow me to learn about new things.</p>
-                <div class="social-networks">
-                    <a href="https://domingoacd.github.io/portfolio"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/domingoacd/"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
-        </section>
-        <section class="skills" id="skills">
-            <h2>Skills</h2>
-            <ul class="sub-body skills-list">
-                <li>
-                    <ul>
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>Javascript</li>
-                    </ul>
-                </li>
-                <li>
-                    <ul>
-                        <li>Git</li>
-                        <li>Sass</li>
-                        <li>SEO</li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
-        <section class="projects" id="projects">
-                <h2>Projects</h2>
-                <div class="sub-body">
-                    <figure class="thumbnail">
-                        <figcaption>FizzBuzz Game</figcaption>
-                        <a href="https://domingoacd.github.io/FizzBuzzGame/"><img src="img/fizz_thumb.png" alt=""></a>
-                        <a href="https://github.com/domingoacd/FizzBuzzGame">Watch code on Github<i class="fab fa-github"></i></a>
-                    </figure>
-                    <figure class="thumbnail">
-                        <figcaption>Pomodoro Timer</figcaption>
-                        <a href="https://domingoacd.github.io/PomoTemp/"><img src="img/pom_thumb.png" alt=""></a>
-                        <a href="https://github.com/domingoacd/PomoTemp">Watch code on Github<i class="fab fa-github"></i></a>
-                    </figure>
-                    <figure class="thumbnail">
-                        <figcaption>API Searcher</figcaption>
-                        <a href="https://domingoacd.github.io/FreeAPIsSearcher"><img src="img/apisearcher_thumb.png" alt=""></a>
-                        <a href="https://github.com/domingoacd/FreeAPIsSearcher">Watch code on Github<i class="fab fa-github"></i></a>
-                    </figure>
-                </div>
-        </section>
-        <section class="websites" id="websites">
-                <h2>Websites</h2>
-                <div class="sub-body">
-                    <figure class="thumbnail">
-                        <figcaption>Restaurant</figcaption>
-                        <a href="LeRestaurant/index.html"><img src="img/rest_thumb.png" alt=""></a>
-                        <a href="https://github.com/domingoacd/portfolio/tree/master/LeRestaurant">Watch code on Github<i class="fab fa-github"></i></a>
-                    </figure>
-                    <figure class="thumbnail">
-                        <figcaption>Charger</figcaption>
-                        <a href="https://domingoacd.github.io/ChargerWeb/"><img src="img/charger_thumb.png" alt=""></a>
-                        <a href="https://github.com/domingoacd/ChargerWeb">Watch code on Github<i class="fab fa-github"></i></a>
-                    </figure>
-                </div>
-        </section>
-    </div>
-    <script src="javascript.js"></script>
+    <section class="content content--first j-content" id="home">
+      <div class="cover">
+        <img src="./assets/foto.png" alt="" class="cover__pic">
+
+        <div class="cover__titles">
+          <h1>Domingo <br />Cabeza</h1>
+          <h3>Web Developer</h3>
+        </div>
+      </div>
+      <nav class="second-menu">
+        <ul>
+          <li class="j-anchor" data-link="about"><a  href="#about">About me</a></li>
+          <li class="j-anchor" data-link="projects"><a href="#projects">Projects</a></li>
+          <li class="j-anchor" data-link="contact"><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </section>
+
+    <section class="content content--second j-content"  id="about">
+      <h2 class="content__title">
+        About me
+      </h2>
+
+      <div class="summary">
+        Frontend web developer aiming to be full stack. With experience creating interactive elements for e-learning platforms and developing cms and online courses interfaces. <br>
+
+        Some technologies that I use are:
+
+        <ul>
+          <li>
+            React js
+          </li>
+          <li>
+            Css/ Sass
+          </li>
+          <li>
+            Javascript
+          </li>
+        </ul>
+        
+        And some others that I've learned throughout the projects I have been working on.
+
+      </div>
+    </section>
+
+    <section class="content content--third j-content"  id="projects">
+      <h2 class="content__title">
+        My works
+      </h2>
+
+      <div class="projects">
+        <div class="project project--1">
+          <div class="bck-container"></div>
+          <div class="upper-text">
+            <img src="./assets/pokeball.png" alt="">
+            <p class="small-text">React</p>
+          </div>
+          <p class="project-name">Pokedex</p>
+
+          <div class="project__hover-content">
+            <p class="hover-text">
+              Find all the pokemons info you need.
+            </p>
+            <a href="./react-pokedex.html" class="btn">More details</a>
+          </div>
+        </div>
+        <div class="project project--2">
+          <div class="bck-container"></div>
+          <div>
+            <p class="small-text">Charger</p>
+            <p class="project-name">Website</p>
+          </div>
+          <div class="project__hover-content">
+            <p class="hover-text">
+              Mockup of a cars website.  
+            </p>
+            <a href="./charger.html" class="btn">More details</a>
+          </div>
+        </div>
+        <div class="project project--3">
+          <div class="bck-container"></div>
+          <div>
+            <p class="big-text">Formación</p>
+            <p class="small-text">Smart</p>
+          </div>
+          <div class="project__hover-content">
+            <p class="hover-text">
+              Business management e-learning platform.
+            </p>
+            <a href="./formacion-smart.html" class="btn">More details</a>
+          </div>
+        </div>
+        <div class="project project--4">
+          <div class="bck-container"></div>
+          <img src="./assets/academia-logo.png" alt="">
+          <div class="project__hover-content">
+            <p class="hover-text">
+              Ecommerce for selling online courses.
+            </p>
+            <a href="./academia.html" class="btn">More details</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content content--fourth j-content"  id="contact">
+      <h2 class="content__title">Want to tell me something?</h2>
+      <form action="https://docs.google.com/forms/d/e/1FAIpQLScL7x7IDeC5WilG5Wewhd9zDr3ZJ1WH521ZA0ZyCpMq-AzXyQ/formResponse?"
+        class="contact-form">
+        <label for="entry.1793054211" class="contact-form__name">
+          Name:
+          <input type="text" name="entry.1793054211" id="entry.1793054211" required aria-required="true">
+        </label>
+        <label for="entry.1002230681" class="contact-form__email">
+          Email:
+          <input type="email" name="entry.1002230681" id="entry.1002230681" required aria-required="true">
+        </label>
+        <label for="entry.1233878156" class="contact-form__message">
+          What can I help you with?
+          <textarea name="entry.1233878156" id="entry.1233878156" cols="30" rows="10" required
+            aria-required="true"></textarea>
+        </label>
+
+        <button type="submit">
+          Submit 
+          <span class="spinner-container">
+            <span class="spinner"></span>
+          </span>
+        </button>
+      </form>
+      
+    </section>
+  </div>
+  
+  <script src="./js/app.js"></script>
 </body>
 </html>
+

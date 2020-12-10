@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Project | React Pokedex</title>
+</head>
+<body>
+  <nav class="main-menu main-menu--project">
+    <ul class="main-menu__menu show" id="main-menu">
+      <li class="j-anchor" >
+        <a href="./index.html">
+          <img src="./assets/home.png" alt="">
+          Go back
+        </a>
+      </li>
+    </ul>
+
+    <ul class="main-menu__icons">
+      <li>
+        <a href="https://www.linkedin.com/in/domingoacd/">
+          <img src="./assets/linkedin.png" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/domingoacd">
+          <img src="./assets/github.png" alt="">
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <section class="container"> 
+    <div class="content page page--pokedex j-page">
+      <div class="project-identification">
+        <div class="project-identification__image pokemon-image"></div>
+        <div class="project-identification__info">
+          <h1>
+            <span class="small-text">
+              <img src="./assets/pokeball.png" alt="">
+              React
+            </span>
+            Pokedex
+          </h1>
+          <a href="https://github.com/domingoacd/reactPokedex" class="project-link project-link--one">Source code</a>
+          <a href="https://domingoacd.github.io/reactPokedex/" class="project-link project-link--two">Live website</a>
+        </div>
+      </div>
+      <div class="project-summary">
+        <h2>Summary</h2>
+        <p>
+          Pokedex made with React Js, using Styled Components and React Router. <br>
+
+          Works mainly fetching data from different APIs and entry points, then organizing the information and displaying it according to the selected pokemon. <br>
+
+          To avoid long loading times, the pokemons are fetched and displayed by groups, and, when the user scrolls to bottom, the app makes another asynchronous request to get the new pokemons data. 
+
+        </p>
+      </div>
+      <div class="project-technologies">
+        <h2>Technologies used</h2>
+        <ul>
+          <li>React JS</li>
+          <li>React Router</li>
+          <li>Styled Components</li>
+          <li>API Fetching</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function showPageContent(e) {
+      const content = document.querySelector('.j-page');
+
+      content.classList.add('show');
+    }
+    window.addEventListener('load', showPageContent);
+  </script>
+</body>
+</html>

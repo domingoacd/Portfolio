@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Project | Formación Smart</title>
+</head>
+<body>
+  <nav class="main-menu main-menu--project">
+    <ul class="main-menu__menu show" id="main-menu">
+      <li class="j-anchor" >
+        <a href="./index.html">
+          <img src="./assets/home.png" alt="">
+          Go back
+        </a>
+      </li>
+    </ul>
+
+    <ul class="main-menu__icons">
+      <li>
+        <a href="https://www.linkedin.com/in/domingoacd/">
+          <img src="./assets/linkedin.png" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/domingoacd">
+          <img src="./assets/github.png" alt="">
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <section class="container"> 
+    <div class="content page page--pokedex j-page">
+      <div class="project-identification">
+        <div class="project-identification__image smart-image"></div>
+        <div class="project-identification__info">
+          <h1>
+            
+            <span class="small-text">Formación</span>
+            Smart
+          </h1>
+          <a href="https://www.formacionsmart.com/" class="project-link project-link--two">Live website</a>
+        </div>
+      </div>
+      <div class="project-summary">
+        <h2>Summary</h2>
+        <p>
+          E-learning platform, oriented to teach about business and project management. <br>
+
+          The project main focus was to enhance the usability, creating a more responsive version while taking into account the use of iframes to show interactive content. <br>
+          
+          Furthermore, was created a tutorial that guides first time users around the platform main features and contents to make it more user-friendly, and the loading time was reduced thanks to the refactoring made during the development process.
+
+        </p>
+      </div>
+      <div class="project-technologies">
+        <h2>Technologies used</h2>
+        <ul>
+          <li>Javascript</li>
+          <li>Sass</li>
+          <li>Bootstrap</li>
+          <li>Twig</li>
+          <li>PHP</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function showPageContent(e) {
+      const content = document.querySelector('.j-page');
+
+      content.classList.add('show');
+    }
+    window.addEventListener('load', showPageContent);
+  </script>
+</body>
+</html>

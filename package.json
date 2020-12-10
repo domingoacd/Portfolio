@@ -1,0 +1,25 @@
+{
+  "name": "me",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass ./sass/index.scss ./css/style.css --watch --source-map=true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/domingoacd/me.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/domingoacd/me/issues"
+  },
+  "homepage": "https://github.com/domingoacd/me#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-sass": "^4.14.1",
+    "nodemon": "^2.0.4"
+  }
+}
